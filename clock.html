@@ -6,53 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>clock</title>
-    <style>
-        * {
-            margin: 0px;
-            padding: opx;
-        }
-
-        body {
-            background-color: darkgrey;
-            display: flex;
-
-            justify-content: center;
-            align-items: center;
-
-        }
-
-        #box {
-            height: 25vw;
-            width: 40vw;
-            background-color: white;
-
-
-
-            border-radius: 1vh;
-            background-color: rgb(49, 70, 100);
-            display: flex;
-            justify-content: center;
-        }
-
-        #time {
-            font-size: 2em;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            margin-top: 0.3vw;
-
-
-        }
-
-        .nodes {
-            display: inline;
-        }
-
-        #nodrow {
-            position: absolute;
-            top: 6.4vw;
-            font-size: 6vw;
-            /* display: inline; */
-        }
-    </style>
+    <link rel="stylesheet" href="clock.css">
+    
+   
 </head>
 
 <body>
@@ -69,32 +25,8 @@
             <div class="nodes">00</div>
         </div>
     </div>
-    <script>
-        let temptime = document.getElementsByClassName('nodes');
-
-        setInterval(clock, 1000);
-        function hour(h) {
-            if (h > 12) {
-                return h - 12;
-            } else {
-                return h;
-            }
-        }
-        function clock() {
-            let he = new Date();
-            console.log(he);
-            hou = he.getHours();
-            _12hours=hour(hou);
-            minute = he.getMinutes();
-            second = he.getSeconds();
-            temptime[2].innerHTML = second;
-            temptime[1].innerHTML = minute;
-            temptime[0].innerHTML = _12hours;
-        }
-
-
-
-    </script>
+    <script src="clock.js">  </script>
+ 
 </body>
 
 </html>

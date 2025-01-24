@@ -1,0 +1,45 @@
+* {
+    margin: 0px;
+    padding: opx;
+}
+
+body {
+    background-color: darkgrey;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+}
+
+#box {
+    height: 25vw;
+    width: 40vw;
+    background-color: white;
+
+
+
+    border-radius: 1vh;
+    background-color: rgb(49, 70, 100);
+    display: flex;
+    justify-content: center;
+}
+
+#time {
+    font-size: 2em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 0.3vw;
+
+
+}
+
+.nodes {
+    display: inline;
+}
+
+#nodrow {
+    position: absolute;
+    top: 6.4vw;
+    font-size: 6vw;
+    /* display: inline; */
+}
