@@ -1,5 +1,10 @@
 let temptime = document.getElementsByClassName('nodes');
 
+let he = new Date();
+    temptime[2].innerHTML = he.getSeconds();
+    temptime[1].innerHTML = he.getMinutes();
+    temptime[0].innerHTML = hour(he.getHours()); //24 to 12 through function hour
+
 setInterval(clock, 1000);
 function hour(h) {
     if (h > 12) {
@@ -10,13 +15,8 @@ function hour(h) {
 }
 function clock() {
     let he = new Date();
-    console.log(he);
-    hou = he.getHours();
-    _12hours=hour(hou);
-    minute = he.getMinutes();
-    second = he.getSeconds();
-    temptime[2].innerHTML = second;
-    temptime[1].innerHTML = minute;
-    temptime[0].innerHTML = _12hours;
+    temptime[2].innerHTML = he.getSeconds();
+    temptime[1].innerHTML = he.getMinutes();
+    temptime[0].innerHTML = hour(he.getHours());
 }
 

@@ -34,8 +34,19 @@ body {
 }
 
 .nodes {
-    display: inline;
+    display:inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aqua;
+    height:8vw ;width: 8vw;
+    
 }
+.nodes:nth-of-type(3){
+    background-color: blue;
+    height: 4vw;width: 4vw;
+    font-size: 20%;
+}
+
 
 #nodrow {
     position: absolute;
